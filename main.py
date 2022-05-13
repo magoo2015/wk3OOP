@@ -19,5 +19,16 @@ first_cart = ShoppingCart()
 
 
 print(first_cart.shopping_cart_list[1].price)
+total = first_cart.total_in_cart()
+print(total)
+first_cart.new_product(Product("hammer", 30, "hardware"))
+total = first_cart.total_in_cart()
+print(first_cart.total_in_cart())
+
+current_list = first_cart.shopping_cart_list()
+print(current_list)
+first_cart.empty_cart()
+print(first_cart.shopping_cart_list())
+
 
 

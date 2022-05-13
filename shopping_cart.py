@@ -1,4 +1,3 @@
-from itertools import product
 from product import Product
 
 
@@ -10,8 +9,30 @@ class ShoppingCart:
             Product("toothpaste",3, "hygiene"),
             Product("milk", 8 , "food")    
         ]
+        
 
     
     def total_in_cart(self):
         total = 0
-        for self.shopping_cart_list
+
+        for item in self.shopping_cart_list:
+            total += item.price
+        return total
+
+    
+    def new_product(self, new_item):
+        self.new_item = new_item
+        self.shopping_cart_list.append(self.new_item)
+        
+    
+    
+    def empty_cart(self):
+        self.shopping_cart_list = []
+        return self.shopping_cart_list
+
+        
+
+
+        
+       
+     
