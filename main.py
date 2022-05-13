@@ -1,4 +1,7 @@
 from alarm_clock import AlarmClock
+from product import Product
+from customer import Customer
+from shopping_cart import ShoppingCart
 
 # clock_1 = AlarmClock()
 
@@ -7,4 +10,14 @@ from alarm_clock import AlarmClock
 
 # alarm_setting = clock_1.alarm_on_or_off(False)
 # print(alarm_setting)
+
+# product_1 = Product("soap",5, "hygiene")
+# product_2 = Product("toothpaste",3, "hygiene")
+# product_3 = Product("milk", 8 , "food")
+
+first_cart = ShoppingCart()
+
+
+print(first_cart.shopping_cart_list[1].price)
+
 
