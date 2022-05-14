@@ -26,6 +26,15 @@ first_cart.add_to_cart(item_3)
 
 first_cart.view_products()
 
+total_price = first_cart.customer_cart.total_in_cart()
+
+print(f"Here is the current total of your cart: ${total_price}")
+
+first_cart.customer_cart.empty_cart()
+first_cart.view_products()
+
+
+
 
 
 
