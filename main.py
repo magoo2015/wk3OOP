@@ -1,7 +1,7 @@
 from alarm_clock import AlarmClock
 from product import Product
 from customer import Customer
-from shopping_cart import ShoppingCart
+
 
 # clock_1 = AlarmClock()
 
@@ -11,24 +11,27 @@ from shopping_cart import ShoppingCart
 # alarm_setting = clock_1.alarm_on_or_off(False)
 # print(alarm_setting)
 
-# product_1 = Product("soap",5, "hygiene")
-# product_2 = Product("toothpaste",3, "hygiene")
-# product_3 = Product("milk", 8 , "food")
 
-first_cart = ShoppingCart()
+first_cart = Customer("Sydney")
+
+print(f"Customers name is:  {first_cart.customer_name}")
+
+item_1 = Product("hammer", 30, "hardware")
+item_2 = Product("eggs", 5, "food")
+item_3 = Product("bleach", 3, "cleaning")
+first_cart.add_to_cart(item_1)
+first_cart.add_to_cart(item_2)
+first_cart.add_to_cart(item_3)
 
 
-print(first_cart.shopping_cart_list[1].price)
-total = first_cart.total_in_cart()
-print(total)
-first_cart.new_product(Product("hammer", 30, "hardware"))
-total = first_cart.total_in_cart()
-print(first_cart.total_in_cart())
+first_cart.view_products()
 
-current_list = first_cart.shopping_cart_list()
-print(current_list)
-first_cart.empty_cart()
-print(first_cart.shopping_cart_list())
+
+
+
+
+
+
 
 
 
